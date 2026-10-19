@@ -94,7 +94,20 @@
 @media(max-width:1020px){.a4-home .a4-hero-home{gap:0}.a4-home-art{min-width:180px;width:32%}.a4-home .a4-quickstats>div{display:block}.a4-home .a4-quickstats span{display:block}}
 @media(max-width:800px){.a4-home .a4-hero-home{padding:27px 22px;flex-direction:column;align-items:stretch}.a4-home-art{margin:auto;max-width:290px;width:75%;min-width:0}.a4-home .a4-quickstats{grid-template-columns:repeat(2,minmax(0,1fr))}.a4-home-cards,.a4-home-lower{grid-template-columns:1fr}.a4-home-tile{padding:16px}}
 @media(max-width:420px){.a4-home .a4-hero-home h1{font-size:29px}.a4-home .hero-actions{display:flex;flex-wrap:wrap;gap:10px}.a4-home .hero-actions button{width:100%;justify-content:center}.a4-home .a4-quickstats>div{padding:15px}.a4-home .a4-quickstats strong{font-size:25px}}
-</style></head>
+</style>
+<!-- Barras de rolagem ocultas; rolagem e interacoes continuam habilitadas. -->
+<style id="atlas-scrollbars-invisiveis">
+/* Firefox e browsers compativeis */
+html, body, * { scrollbar-width: none !important; -ms-overflow-style: none !important; }
+/* Chrome, Edge e Safari (incluindo areas de rolagem internas) */
+html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+}
+</style>
+</head>
 <body><div class="overlay" id="overlay"></div><div class="app">
 <aside class="sidebar" id="sidebar">
 <div class="brand"><div class="brand-logo">B</div><div><strong>BLENDER <span style="color:var(--orange)">ATLAS</span></strong><small>GUIA INTERATIVO 4.0 • 5.2 LTS</small></div></div>
